@@ -13,9 +13,11 @@ public class EmployeeService {
     @Autowired
     private EmployeeRepository employeeRepository;
 
+    // raju - create employee
     public Employee createEmployee(Employee employee) {
         return employeeRepository.save(employee);
     }
+
 
 //    @Cacheable(value = "employees", key = "#id")
     public Employee getEmployeeById(Long id) {
